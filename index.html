@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unsplash API</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Unsplash API</h1>
+    <input type="text" id="search-input" placeholder="Enter keyword" />
+    <button onclick="fetchUsingXHR()">Search using XHR</button>
+    <button onclick="fetchUsingPromises()">Search using Fetch (Promises)</button>
+    <button onclick="fetchUsingAsync()">Search using Fetch (Async/Await)</button>
+    <div class="gallery" id="gallery"></div>
+    <div id="image-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;"></div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
